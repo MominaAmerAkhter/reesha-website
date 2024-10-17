@@ -1,0 +1,50 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.mainArea{
+    background-color: rgba(0, 43, 52, 1);
+    height: 100%;
+    font-family: "Andada Pro";
+    width: 100%;
+}
+
+.background {
+
+    background-image: url("../images/hero-ipad-background.png");
+    background-repeat: no-repeat;
+    height: 200vh;
+    /* position: relative; */
+    /* background-size: contain; */
+    overflow: visible; 
+}
+
+.overlapping-imgs{
+
+    width: 90%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+}
+
+.ipad-img{
+
+    width: 50%;
+    z-index: 1;
+    margin-right: 30%;
+    margin-top: 2%;
+    position: relative;
+}
+
+.hero-img{
+    z-index: 9999;
+    width: 50%;
+  
+    position: absolute;
+    margin-left: -35%;
+}
