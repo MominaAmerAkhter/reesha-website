@@ -13,12 +13,7 @@ body, html {
 
 .background {
 
-    background-image: url("../images/hero-ipad-background.png");
-    background-repeat: no-repeat;
-    height: 200vh;
-    /* position: relative; */
-    /* background-size: contain; */
-    overflow: visible; 
+    position: relative;
 }
 
 .overlapping-imgs{

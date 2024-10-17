@@ -12,7 +12,7 @@ import arabic from "../images/arabic.png"
 import progress from "../images/progress.png"
 import orangeButton from "../images/orangeButton.png"
 import backgroundImage from "../images/background.png"
-import foreground from "../images/foreground.png"
+import hero from "../images/hero1.png"
 import twoIpads from "../images/two-ipads.png"
 import HeroSection from '../images/hero-ipad-background.png'
 import Typography from '@mui/material/Typography';
@@ -58,9 +58,10 @@ const HomePage = () => {
                                 WebkitTextFillColor: 'transparent',
                                 fontWeight: 400,
                                 textShadow: '2px 2px 5px rgba(0, 0, 0, 0.5)', 
-                                textAlign: 'right',
-                                marginRight: "50%",
-                                paddingTop: 10
+                                textAlign: { xs: 'center', md: 'right' },
+                                marginRight: { xs: 0, md: '50%' },
+                                paddingTop: 10,
+                                fontSize: { xs: '2rem', md: '4rem' }, 
                             }}
                             gutterBottom>
                         متعة ومرح          
@@ -73,8 +74,9 @@ const HomePage = () => {
                             sx={{
                                 color: '#fff', // White color for the text
                                 fontWeight: 400,
-                                textAlign: 'right',
-                                paddingRight: "50%",                
+                                textAlign: { xs: 'center', md: 'right' },
+                                paddingRight: { xs: 0, md: '50%' },
+                                fontSize: { xs: '1rem', md: '1.5rem' },                
                             }}>
                         تعلم بمرح ومتعة مع تطبيق ريشة الالكتروني للمراحل الدراسية من 
                         <br />
@@ -82,31 +84,47 @@ const HomePage = () => {
                         </Typography>
                         
                     </Box>
-                    {/* <Box >
-                    <img
-                        // className='ipad-img'
-                        src={ipad}
-                        alt="Avatar"
-                        style={{
-                            // position: 'absolute',
-                            marginRight: '20%',
-                            marginTop: '2%',
-                            zIndex: 1
-                        }}
-                    />
-                    <img
-                        // className='hero-img'
-                        src={foreground}
-                        alt="Avatar"
-                        style={{
-                            position: 'absolute',
-                            top: '-80%',
-                            left: '30%',
-                            zIndex: 2
-                        }}
-                    />
-                    
-                    </Box> */}
+                    <Box sx={{display: { xs: 'none', md: 'flex' },}} >
+                        <img
+                            // className='ipad-img'
+                            src={ipad}
+                            alt="Avatar"
+                            style={{
+                                // position: 'absolute',
+                                marginLeft: '10%',
+                                marginRight: '20%',
+                                marginTop: '2%',
+                                zIndex: 1
+                            }}
+                        />
+                        <img
+                            // className='hero-img'
+                            src={hero}
+                            alt="Avatar"
+                            style={{
+                                position: 'absolute',
+                                top: '-8%',
+                                left: "45%",
+                                zIndex: 2,
+                                maxWidth: '50%'
+                            }}
+                        />
+                    </Box>
+                    <Box sx={{display: { xs: 'flex', md: 'none' },}} >
+                        <img
+                                // className='ipad-img'
+                                src={ipad}
+                                alt="Avatar"
+                                style={{
+                                    // position: 'absolute',
+                                    marginLeft: '10%',
+                                    marginRight: '20%',
+                                    marginTop: '2%',
+                                    zIndex: 1,
+                                    maxWidth: '80%'
+                                }}
+                            />
+                    </Box>
                 </Box>
 
                 {/* second block --> alduroos */}
@@ -525,7 +543,7 @@ const HomePage = () => {
                             </Box>
                         </Box>
                     </Box>
-                    <Box sx={{ position: { xs: 'relative', md: 'absolute' }, right: 0, bottom: 0, margin: { xs: '20px auto', md: '0' } }}>
+                    <Box sx={{ position: { xs: 'relative', md: 'absolute' }, right: 0, bottom: 0, margin: { xs: '20px 0px 20px 20px', md: '0' } }}>
                         <img size="small" src={twoIpads} alt="Two iPads" style={{ maxWidth: '100%', height: 'auto' }} />
                     </Box>
                 </Box>
