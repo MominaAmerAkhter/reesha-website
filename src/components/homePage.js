@@ -51,7 +51,7 @@ const HomePage = () => {
                 <Box className="background">
                     <Box >
                         <Typography 
-                            variant="h1" 
+                            variant="h2" 
                             sx={{
                                 background: 'linear-gradient(90deg, #ff5e3a, #ff9900)', 
                                 WebkitBackgroundClip: 'text', 
@@ -61,7 +61,7 @@ const HomePage = () => {
                                 textAlign: { xs: 'center', md: 'right' },
                                 marginRight: { xs: 0, md: '50%' },
                                 paddingTop: 10,
-                                fontSize: { xs: '2rem', md: '4rem' }, 
+                                // fontSize: { xs: '2rem', md: '4rem' }, 
                             }}
                             gutterBottom>
                         متعة ومرح          
@@ -103,28 +103,33 @@ const HomePage = () => {
                             alt="Avatar"
                             style={{
                                 position: 'absolute',
-                                top: '-8%',
+                                top: '0%',
                                 left: "45%",
                                 zIndex: 2,
                                 maxWidth: '50%'
                             }}
                         />
                     </Box>
-                    <Box sx={{display: { xs: 'flex', md: 'none' },}} >
+                    <Box sx={{display: { xs: 'flex', md: 'none' }, flexDirection: "column", alignItems: "center", justifyContent: "center"}} >
                         <img
                                 // className='ipad-img'
                                 src={ipad}
                                 alt="Avatar"
                                 style={{
-                                    // position: 'absolute',
-                                    marginLeft: '10%',
-                                    marginRight: '20%',
-                                    marginTop: '2%',
-                                    zIndex: 1,
+                                    marginTop: "2%",
                                     maxWidth: '80%'
                                 }}
                             />
+                        <img
+                            // className='hero-img'
+                            src={hero}
+                            alt="Avatar"
+                            style={{
+                                maxWidth: '50%'
+                            }}
+                        />
                     </Box>
+
                 </Box>
 
                 {/* second block --> alduroos */}

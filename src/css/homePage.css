@@ -13,6 +13,9 @@ body, html {
 
 .background {
 
+    background-image: url("../images/background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
     position: relative;
 }
 
