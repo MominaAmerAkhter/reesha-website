@@ -9,7 +9,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
-import logo from '../images/logo.png'
+import logo from '../../images/logo.png'
 import "@fontsource/andada-pro/400.css"; // Specify weight
 
 const pages = ['تواصل معنا', 'المراحل', 'عن ريشة', 'الرئيسية'];
@@ -32,7 +32,6 @@ const NavBar = () => {
         // className='navBar'
         sx={{
             background: '#002B34',
-            // background: 'linear-gradient(90deg, rgba(0, 43, 52, 1) 0%, rgba(0, 127, 154, 0) 100%)',
             filter: 'drop-shadow(0px 3.96694px 53.6529px rgba(0, 0, 0, 0.33))',
             justifyContent: 'space-between',
             }}

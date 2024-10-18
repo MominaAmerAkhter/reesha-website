@@ -1,7 +1,7 @@
 import "@fontsource/andada-pro"; 
 import './App.css';
 import { BrowserRouter,Routes, Route } from "react-router-dom";
-import HomePage from "./components/homePage";
+import HomePage from "./components/homepage/homePage";
 
 
 import { ThemeProvider } from "@material-tailwind/react";

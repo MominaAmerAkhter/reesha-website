@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { Box, Typography, Link } from '@mui/material';
-import FooterImage from "../images/footer-element.png"
-import logo from '../images/logo.png'
+import FooterImage from "../../images/footer-element.png"
+import logo from '../../images/logo.png'
 import GoogleIcon from '@mui/icons-material/Google';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import InstagramIcon from '@mui/icons-material/Instagram';
