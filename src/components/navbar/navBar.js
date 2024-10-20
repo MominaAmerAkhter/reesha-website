@@ -12,9 +12,9 @@ import MenuItem from '@mui/material/MenuItem';
 import logo from '../../images/logo.png'
 import "@fontsource/andada-pro/400.css"; // Specify weight
 
-const pages = ['تواصل معنا', 'المراحل', 'عن ريشة', 'الرئيسية'];
+const pages = ['للتواصل','الاشتراكات', ' مسار التعليم', 'عن المواد', 'الرئيسية'];
 
-const NavBar = () => {
+const NavBar = ({ scrollToSection, sectionRefs }) => {
 
   const [anchorElNav, setAnchorElNav] = React.useState(null);
 
@@ -78,8 +78,8 @@ const NavBar = () => {
                 onClose={handleCloseNavMenu}
                 sx={{display: { xs: 'block', md: 'none' } }}
                 >
-                {pages.map((page) => (
-                    <MenuItem key={page} onClick={handleCloseNavMenu}>
+                {pages.map((page,index) => (
+                    <MenuItem key={page} onClick={() => scrollToSection(sectionRefs[index])}>
                         <Typography 
                             sx={{ 
                                 fontFamily: 'Andada Pro',
@@ -96,14 +96,15 @@ const NavBar = () => {
             </Box>
 
             <Box sx={{ justifyContent:"center", flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-                {pages.map((page) => (
-                <Button
-                    key={page}
-                    onClick={handleCloseNavMenu}
-                    sx={{ my: 2, color: 'white', display: 'block',fontFamily: 'Andada Pro',fontSize: 20, mx: 3 }}
-                >
-                    {page}
-                </Button>
+                {pages.map((page,index) => (
+                    <Button
+                        key={page}
+                        onClick={() => scrollToSection(sectionRefs[index])}
+                        sx={{ my: 2, color: 'white', display: 'block',fontFamily: 'Andada Pro',fontSize: 20, mx: 3 }}
+                    >
+                        {page}
+                    </Button>
+
                 ))}
             </Box>
 

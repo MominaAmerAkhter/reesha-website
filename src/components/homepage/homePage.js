@@ -1,10 +1,8 @@
 import * as React from 'react';
+import { useRef } from 'react';
 import NavBar from '../navbar/navBar'
 import Footer from '../footer/footer'
 import './homePage.css'
-import twoIpads from "../../images/two-ipads.png"
-import Typography from '@mui/material/Typography';
-import Box from '@mui/material/Box';
 import SectionOne from '../sectionOne/sectionOne';
 import SectionTwo from '../sectionTwo/sectionTwo';
 import SectionThree from '../sectionThree/sectionThree';
@@ -13,25 +11,51 @@ import SectionFive from '../sectionFive/sectionFive';
 
 const HomePage = () => {
 
+    const section1Ref = useRef(null);
+    const section2Ref = useRef(null);
+    const section3Ref = useRef(null);
+    const section4Ref = useRef(null);
+    const section5Ref = useRef(null);
+
+    const sectionRefs = [section5Ref, section4Ref, section3Ref, section2Ref, section1Ref];
+
+    const scrollToSection = (ref) => {
+        ref.current.scrollIntoView({ behavior: 'smooth' });
+    };
+
     return(
         <div>
-            <NavBar/>
+            <NavBar scrollToSection={scrollToSection} 
+            sectionRefs={sectionRefs}/>
             <div className='mainArea'>
                 {/* first block */}
-                <SectionOne/>
+                <div  ref={section1Ref}>
+                    <SectionOne/>
+                </div>
+                
+                {/* second block --> subjects */}
+                <div  ref={section2Ref}>
+                    <SectionTwo/>
+                </div>
+                
 
-                {/* second block --> alduroos */}
-                <SectionTwo/>
-
-                {/* third block --> progress bar */}
-                <SectionThree/>                
+                {/* third block --> educationPath */}
+                <div  ref={section3Ref}>
+                    <SectionThree/>
+                </div>
+                                
                 
                 {/* fourth block --> subscription */}
+                <div  ref={section4Ref}>
                 <SectionFour/>
+                </div>
                 
-                {/* fifth block --> more info */}
-                <SectionFive/>
-
+                
+                {/* fifth block --> contact us */}
+                <div  ref={section5Ref}>
+                    <SectionFive/>
+                </div>
+               
                 <Footer/>
             </div>
 
