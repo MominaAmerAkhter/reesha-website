@@ -26,11 +26,19 @@ const NavBar = ({ scrollToSection, sectionRefs }) => {
     setAnchorElNav(null);
   };
 
+  const [selectedPage, setSelectedPage] = React.useState(pages[0]);
+
+  const handlePageClick = (page, index) => {
+    setSelectedPage(page);
+    scrollToSection(sectionRefs[index]);
+  };
+
   return (
     <AppBar 
-        position="static"
+        position="sticky"
         // className='navBar'
         sx={{
+            position: 'sticky',
             background: '#002B34',
             filter: 'drop-shadow(0px 3.96694px 53.6529px rgba(0, 0, 0, 0.33))',
             justifyContent: 'space-between',
@@ -99,8 +107,16 @@ const NavBar = ({ scrollToSection, sectionRefs }) => {
                 {pages.map((page,index) => (
                     <Button
                         key={page}
-                        onClick={() => scrollToSection(sectionRefs[index])}
-                        sx={{ my: 2, color: 'white', display: 'block',fontFamily: 'Andada Pro',fontSize: 20, mx: 3 }}
+                        onClick={() => handlePageClick(page,index)}
+                        sx={{ 
+                            my: 2,
+                            color: 'white',
+                            display: 'block',
+                            fontFamily: 'Andada Pro',
+                            fontSize: 20, 
+                            opacity: selectedPage === page ? 1 : 0.5, // Full opacity for selected, duller for others
+                            transition: 'opacity 0.3s ease', // Smooth transition effect
+                            mx: 3 }}
                     >
                         {page}
                     </Button>
