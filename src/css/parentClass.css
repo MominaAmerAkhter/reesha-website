@@ -1,9 +1,8 @@
-
-/* .header {
+.header {
     display: flex;
     flex-direction: column;
     padding-top: 10%;
     text-align: center;
     margin: 0 auto;
     max-width: fit-content;
-} */
+}

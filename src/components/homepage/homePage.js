@@ -8,6 +8,7 @@ import SectionTwo from '../sectionTwo/sectionTwo';
 import SectionThree from '../sectionThree/sectionThree';
 import SectionFour from '../sectionFour/sectionFour';
 import SectionFive from '../sectionFive/sectionFive';
+import "@fontsource/aladin"; 
 
 const HomePage = () => {
 
@@ -42,8 +43,7 @@ const HomePage = () => {
                 {/* third block --> educationPath */}
                 <div  ref={section3Ref}>
                     <SectionThree/>
-                </div>
-                                
+                </div>       
                 
                 {/* fourth block --> subscription */}
                 <div  ref={section4Ref}>
@@ -56,7 +56,8 @@ const HomePage = () => {
                     <SectionFive/>
                 </div>
                
-                <Footer/>
+                <Footer  scrollToSection={scrollToSection} 
+                 sectionRefs={sectionRefs}/>
             </div>
 
         </div>

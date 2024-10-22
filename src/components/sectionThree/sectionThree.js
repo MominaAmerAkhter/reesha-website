@@ -1,15 +1,25 @@
 import * as React from 'react';
 import Typography from '@mui/material/Typography';
-import Box from '@mui/material/Box';
+import {Box, Divider} from '@mui/material';
 import './sectionThree.css'
 import progress from "../../images/progress.png"
+import '../../css/parentClass.css'
 
 
 const SectionThree = () => {
 
     return(
         <Box>
-            <Box>
+            <Box class="header">
+                <Divider 
+                    sx={{
+                    borderColor: 'rgba(255, 171, 36, 1)',
+                    borderWidth: '1px',
+                    width: '100%',
+                    marginBottom: 2,
+                    opacity: 0.9,
+                    }} 
+                />
                 <Typography
                     variant="h2"
                     sx={{
@@ -19,7 +29,6 @@ const SectionThree = () => {
                         fontWeight: 400,
                         textShadow: '2px 2px 5px rgba(0, 0, 0, 0.5)',
                         textAlign: 'center',
-                        paddingTop: 10,
                         paddingBottom: 5,
                         // fontSize: { xs: '1.5rem', sm: '2rem', md: '2.5rem', lg: '3rem' }, 
                     }}

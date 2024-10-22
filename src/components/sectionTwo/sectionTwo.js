@@ -2,19 +2,31 @@ import * as React from 'react';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
-import './sectionTwo.css'
+import Divider from '@mui/material/Divider';
+// import './sectionTwo.css'
+import '../../css/parentClass.css'
 import english from "../../images/english.png"
 import math from "../../images/math.png"
 import geo from "../../images/geo.png"
 import islamic from "../../images/islamic.png"
 import science from "../../images/science.png"
 import arabic from "../../images/arabic.png"
+import rectangle from "../../images/rectangle.png"
 
 const SectionTwo = () => {
 
     return(
         <Box>
-            <Box>
+            <Box class="header">
+                <Divider 
+                    sx={{
+                    borderColor: 'rgba(255, 171, 36, 1)',
+                    borderWidth: '1px',
+                    width: '100%',
+                    marginBottom: 2,
+                    opacity: 0.9,
+                    }} 
+                />
                 <Typography
                     variant="h2"
                     sx={{
@@ -24,7 +36,6 @@ const SectionTwo = () => {
                         fontWeight: 400,
                         textShadow: '2px 2px 5px rgba(0, 0, 0, 0.5)',
                         textAlign: 'center',
-                        paddingTop: 10,
                         paddingBottom: 5
                     }}
                     gutterBottom>

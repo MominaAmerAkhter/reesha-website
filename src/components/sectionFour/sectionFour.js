@@ -2,13 +2,17 @@ import * as React from 'react';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
+import Divider from '@mui/material/Divider';
 import './sectionFour.css'
+import '../../css/parentClass.css'
 import Switch from '@mui/material/Switch'
 import Grid2 from '@mui/material/Grid2'
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
-import CardActions from '@mui/material/CardActions';import orangeButton from "../../images/orangeButton.png"
-
+import CardActions from '@mui/material/CardActions';
+import orangeButton from "../../images/orangeButton.png"
+import bookmark from "../../images/bookmark.png"
+import "@fontsource/aladin/400.css"; // Specify weight
 
 const SectionFour = () => {
 
@@ -178,7 +182,12 @@ const SectionFour = () => {
                         position: 'relative',
                         overflow: 'visible',
                     }}>
-                    <CardContent sx={{ marginTop: '20%', paddingBottom: '0%', marginBottom: '0%' }}>
+                    <img
+                        src={bookmark} 
+                        alt="icon"
+                        style={{ marginLeft: "60%",marginBottom: '0%', alignItems: 'right', justifyContent: 'right' }} // Space between image and text
+                    />
+                    <CardContent sx={{ marginTop: '0.5%', paddingBottom: '0%', marginBottom: '0%' }}>
                         <Typography variant="h4" color='white' component="div"> {/* Adjust variant for smaller screens */}
                         12 شهر
                         </Typography>
@@ -406,7 +415,12 @@ const SectionFour = () => {
                         position: 'relative',
                         overflow: 'visible',
                     }}>
-                    <CardContent sx={{ marginTop: '20%', paddingBottom: '0%', marginBottom: '0%' }}>
+                        <img
+                            src={bookmark} 
+                            alt="icon"
+                            style={{ marginLeft: "60%",marginBottom: '0%', alignItems: 'right', justifyContent: 'right' }} // Space between image and text
+                        />
+                    <CardContent sx={{ marginTop: '0.5%', paddingBottom: '0%', marginBottom: '0%' }}>  
                         <Typography variant="h4" color='white' component="div"> {/* Adjust variant for smaller screens */}
                         12 شهر
                         </Typography>
@@ -476,20 +490,31 @@ const SectionFour = () => {
         )
     };
     
+
+
     return(
-        <Box
-            sx={{paddingBottom: '20%'}}>
-            <Box>
+        <Box sx={{paddingBottom: '20%'}}>
+
+            <Box class='header'>
+                <Divider 
+                    sx={{
+                    borderColor: 'rgba(255, 171, 36, 1)',
+                    borderWidth: '1px',
+                    width: '100%',
+                    marginBottom: 2,
+                    opacity: 0.9,
+                    }} 
+                />
                 <Typography 
                     variant="h2" 
                     sx={{
                         background: 'linear-gradient(90deg, #ff5e3a, #ff9900)', 
                         WebkitBackgroundClip: 'text', 
                         WebkitTextFillColor: 'transparent',
+                        fontFamily: 'Aladin',
                         fontWeight: 400,
                         textShadow: '2px 2px 5px rgba(0, 0, 0, 0.5)', 
                         textAlign: 'center',
-                        paddingTop: 10,
                         paddingBottom: 5
                     }}
                     gutterBottom>
