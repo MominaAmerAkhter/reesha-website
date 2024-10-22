@@ -134,6 +134,7 @@ const NavBar = ({ scrollToSection, sectionRefs }) => {
                         fontFamily: 'Andada Pro',
                         fontSize: { xs: '16px', md: '20px' },
                         fontWeight: 400,
+                        color: 'black'
                     }}
                     >!ابدأ اللعب
                 </Button>

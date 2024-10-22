@@ -15,8 +15,466 @@ const SectionFour = () => {
     const [checked, setChecked] = React.useState(true);
 
     const handleChange = (event) => {
-      setChecked(event.target.checked);
+      
+        setChecked(!checked);
+
     };    
+
+    const singleMembership = () => {
+
+        return(
+            <Box
+                sx={{
+                display: 'flex',
+                flexDirection: { xs: 'column', md: 'row' },
+                alignItems: 'center',
+                justifyContent: 'center',
+                flexWrap: 'wrap', // Ensure cards wrap on smaller screens
+            }}>
+                {/* Card 1 */}
+                <Card 
+                    sx={{ 
+                        my: 2, 
+                        mx: 2,
+                        background: 'linear-gradient(0deg, #45C2D1 -0.02%, #0E6E79 95.94%)',
+                        borderRadius: 10,
+                        height: { xs: 400, md: 500 }, 
+                        width: { xs: 300, md: 350 }, 
+                        position: 'relative',
+                        overflow: 'visible',
+                    }}>
+                    <CardContent sx={{ marginTop: '20%', paddingBottom: '0%', marginBottom: '0%' }}>
+                        <Typography variant="h4" color='white' component="div"> {/* Adjust variant for smaller screens */}
+                            شهر ١
+                        </Typography>
+                        <hr style={{ borderColor: 'rgba(242, 186, 52, 1)' }} />
+                        <Typography 
+                            variant="h5"
+                            color='rgba(247, 213, 74, 1)'
+                            sx={{ lineHeight: { xs: 2, md: 4 }, fontWeight: "bold" }}    
+                        >
+                            تحكم أولياء الأمور
+                            <br/>
+                            تحليلات يومية
+                        </Typography>
+
+                        <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', mt: 2 }}>
+                            <Typography 
+                                variant="h3" 
+                                sx={{ 
+                                    color: 'white', 
+                                    fontWeight: 'bold', 
+                                    fontSize: { xs: '24', md: '30' },
+                                    mr: 1,
+                                }}
+                            >
+                                18.000
+                            </Typography>
+                            <Typography 
+                                variant="h3" 
+                                sx={{ 
+                                    color: 'white', 
+                                    textDecoration: 'line-through',
+                                    textDecorationColor: "red",
+                                    fontSize: { xs: '24', md: '30' },
+                                }}
+                            >
+                                25
+                            </Typography>
+                        </Box>
+                    </CardContent>
+
+                    {/* Centered Button */}
+                    <CardActions style={{ justifyContent: 'center' }}>
+                        <Button 
+                            style={{
+                                position: 'absolute',
+                                bottom: '-20px', 
+                                left: '50%', 
+                                transform: 'translateX(-50%)',
+                            }}
+                        >
+                            <img src={orangeButton} alt="Orange Button" />
+                        </Button>
+                    </CardActions>
+                </Card>
+                {/* Card 2 */}
+                <Card 
+                    sx={{ 
+                        my: 2, 
+                        mx: 2,
+                        background: 'linear-gradient(0deg, #45C2D1 -0.02%, #0E6E79 95.94%)',
+                        
+                        borderRadius: 10,
+                        height: { xs: 400, md: 500 }, 
+                        width: { xs: 300, md: 350 }, 
+                        position: 'relative',
+                        overflow: 'visible',
+                    }}>
+                    <CardContent sx={{ marginTop: '20%', paddingBottom: '0%', marginBottom: '0%' }}>
+                        <Typography variant="h4" color='white' component="div"> {/* Adjust variant for smaller screens */}
+                        3 أشهر
+                        </Typography>
+                        <hr style={{ borderColor: 'rgba(242, 186, 52, 1)' }} />
+                        <Typography 
+                            variant="h5" 
+                            color="white"
+                            sx={{ lineHeight: { xs: 2, md: 4 }, fontWeight: "bold"  }}    
+                        >
+                            تحكم أولياء الأمور
+                            <br/>
+                            تحليلات يومية
+                        </Typography>
+
+                        <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', mt: 2}}>
+                            <Typography 
+                                variant="h3" 
+                                sx={{ 
+                                    color: 'white', 
+                                    fontWeight: 'bold', 
+                                    fontSize: { xs: '24', md: '30' },
+                                    mr: 1,
+                                }}
+                            >
+                            38.500
+                            </Typography>
+                            <Typography 
+                                variant="h3" 
+                                sx={{ 
+                                    color: 'white', 
+                                    textDecoration: 'line-through',
+                                    textDecorationColor: "red",
+                                    fontSize: { xs: '24', md: '30' },
+                                }}
+                            >
+                                55
+                            </Typography>
+                        </Box>
+                    </CardContent>
+
+                    {/* Centered Button */}
+                    <CardActions style={{ justifyContent: 'center' }}>
+                        <Button 
+                            style={{
+                                position: 'absolute',
+                                bottom: '-20px', 
+                                left: '50%', 
+                                transform: 'translateX(-50%)',
+                            }}
+                        >
+                            <img src={orangeButton} alt="Orange Button" />
+                        </Button>
+                    </CardActions>
+                </Card>
+                {/* Card 3*/}
+                <Card 
+                    sx={{ 
+                        my: 2, 
+                        mx: 2,
+                        background: 'linear-gradient(180deg, #FFB760 0%, #D84C16 100%)',
+                        borderRadius: 10,
+                        height: { xs: 400, md: 500 },
+                        width: { xs: 300, md: 350 }, 
+                        position: 'relative',
+                        overflow: 'visible',
+                    }}>
+                    <CardContent sx={{ marginTop: '20%', paddingBottom: '0%', marginBottom: '0%' }}>
+                        <Typography variant="h4" color='white' component="div"> {/* Adjust variant for smaller screens */}
+                        12 شهر
+                        </Typography>
+                        <hr style={{ borderColor: 'rgba(242, 186, 52, 1)' }} />
+                        <Typography 
+                            variant="h5" 
+                            color='rgba(247, 213, 74, 1)'
+                            sx={{ lineHeight: { xs: 2, md: 4 }, fontWeight: "bold" }}    
+                        >
+                            كل المميزات
+                            <br/>
+
+                        </Typography>        
+                        <Typography 
+                                variant="h5" 
+                                color='rgba(247, 213, 74, 1)'
+                                sx={{ lineHeight: { xs: 1, md: 2 }, fontWeight: "bold" }}    
+                                >
+                            تذكرة 
+                            <span style={{ color: 'red', marginRight: '2%'}}>مجانا </span>
+                            لـ
+                            <br/>
+                            للبرنامج الصيفي        
+                        </Typography>
+
+                        <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', mt: 2, }}>
+                            <Typography 
+                                variant="h3" 
+                                sx={{ 
+                                    color: 'white', 
+                                    fontWeight: 'bold', 
+                                    fontSize: { xs: '24', md: '30' },
+                                    mr: 1,
+                                }}
+                            >
+                                59.900
+                            </Typography>
+                            <Typography 
+                                variant="h3" 
+                                sx={{ 
+                                    color: 'white', 
+                                    textDecoration: 'line-through',
+                                    textDecorationColor: "red",
+                                    fontSize: { xs: '24', md: '30' },
+                                }}
+                            >
+                                95
+                            </Typography>
+                        </Box>
+                    </CardContent>
+
+                    {/* Centered Button */}
+                    <CardActions style={{ justifyContent: 'center' }}>
+                        <Button 
+                            style={{
+                                position: 'absolute',
+                                bottom: '-20px', 
+                                left: '50%', 
+                                transform: 'translateX(-50%)',
+                            }}
+                        >
+                            <img src={orangeButton} alt="Orange Button" />
+                        </Button>
+                    </CardActions>
+                </Card>
+            </Box> 
+        )
+    };
+
+    const threeMembership = () => {
+
+        return(
+            <Box
+                sx={{
+                display: 'flex',
+                flexDirection: { xs: 'column', md: 'row' },
+                alignItems: 'center',
+                justifyContent: 'center',
+                flexWrap: 'wrap', // Ensure cards wrap on smaller screens
+            }}>
+                {/* Card 1 */}
+                <Card 
+                    sx={{ 
+                        my: 2, 
+                        mx: 2,
+                        background: 'linear-gradient(0deg, #45C2D1 -0.02%, #0E6E79 95.94%)',
+                        borderRadius: 10,
+                        height: { xs: 400, md: 500 }, 
+                        width: { xs: 300, md: 350 }, 
+                        position: 'relative',
+                        overflow: 'visible',
+                    }}>
+                    <CardContent sx={{ marginTop: '20%', paddingBottom: '0%', marginBottom: '0%' }}>
+                        <Typography variant="h4" color='white' component="div"> {/* Adjust variant for smaller screens */}
+                            شهر ١
+                        </Typography>
+                        <hr style={{ borderColor: 'rgba(242, 186, 52, 1)' }} />
+                        <Typography 
+                            variant="h5"
+                            color='rgba(247, 213, 74, 1)'
+                            sx={{ lineHeight: { xs: 2, md: 4 }, fontWeight: "bold" }}    
+                        >
+                            تحكم أولياء الأمور
+                            <br/>
+                            تحليلات يومية
+                        </Typography>
+
+                        <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', mt: 2 }}>
+                            <Typography 
+                                variant="h3" 
+                                sx={{ 
+                                    color: 'white', 
+                                    fontWeight: 'bold', 
+                                    fontSize: { xs: '24', md: '30' },
+                                    mr: 1,
+                                }}
+                            >
+                                21.990
+                            </Typography>
+                            <Typography 
+                                variant="h3" 
+                                sx={{ 
+                                    color: 'white', 
+                                    textDecoration: 'line-through',
+                                    textDecorationColor: "red",
+                                    fontSize: { xs: '24', md: '30' },
+                                }}
+                            >
+                                45
+                            </Typography>
+                        </Box>
+                    </CardContent>
+
+                    {/* Centered Button */}
+                    <CardActions style={{ justifyContent: 'center' }}>
+                        <Button 
+                            style={{
+                                position: 'absolute',
+                                bottom: '-20px', 
+                                left: '50%', 
+                                transform: 'translateX(-50%)',
+                            }}
+                        >
+                            <img src={orangeButton} alt="Orange Button" />
+                        </Button>
+                    </CardActions>
+                </Card>
+                {/* Card 2 */}
+                <Card 
+                    sx={{ 
+                        my: 2, 
+                        mx: 2,
+                        background: 'linear-gradient(0deg, #45C2D1 -0.02%, #0E6E79 95.94%)',
+                        
+                        borderRadius: 10,
+                        height: { xs: 400, md: 500 }, 
+                        width: { xs: 300, md: 350 }, 
+                        position: 'relative',
+                        overflow: 'visible',
+                    }}>
+                    <CardContent sx={{ marginTop: '20%', paddingBottom: '0%', marginBottom: '0%' }}>
+                        <Typography variant="h4" color='white' component="div"> {/* Adjust variant for smaller screens */}
+                        3 أشهر
+                        </Typography>
+                        <hr style={{ borderColor: 'rgba(242, 186, 52, 1)' }} />
+                        <Typography 
+                            variant="h5" 
+                            color="white"
+                            sx={{ lineHeight: { xs: 2, md: 4 }, fontWeight: "bold"  }}    
+                        >
+                            تحكم أولياء الأمور
+                            <br/>
+                            تحليلات يومية
+                        </Typography>
+
+                        <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', mt: 2}}>
+                            <Typography 
+                                variant="h3" 
+                                sx={{ 
+                                    color: 'white', 
+                                    fontWeight: 'bold', 
+                                    fontSize: { xs: '24', md: '30' },
+                                    mr: 1,
+                                }}
+                            >
+                            42.990
+                            </Typography>
+                            <Typography 
+                                variant="h3" 
+                                sx={{ 
+                                    color: 'white', 
+                                    textDecoration: 'line-through',
+                                    textDecorationColor: "red",
+                                    fontSize: { xs: '24', md: '30' },
+                                }}
+                            >
+                                95
+                            </Typography>
+                        </Box>
+                    </CardContent>
+
+                    {/* Centered Button */}
+                    <CardActions style={{ justifyContent: 'center' }}>
+                        <Button 
+                            style={{
+                                position: 'absolute',
+                                bottom: '-20px', 
+                                left: '50%', 
+                                transform: 'translateX(-50%)',
+                            }}
+                        >
+                            <img src={orangeButton} alt="Orange Button" />
+                        </Button>
+                    </CardActions>
+                </Card>
+                {/* Card 3*/}
+                <Card 
+                    sx={{ 
+                        my: 2, 
+                        mx: 2,
+                        background: 'linear-gradient(180deg, #FFB760 0%, #D84C16 100%)',
+                        borderRadius: 10,
+                        height: { xs: 400, md: 500 },
+                        width: { xs: 300, md: 350 }, 
+                        position: 'relative',
+                        overflow: 'visible',
+                    }}>
+                    <CardContent sx={{ marginTop: '20%', paddingBottom: '0%', marginBottom: '0%' }}>
+                        <Typography variant="h4" color='white' component="div"> {/* Adjust variant for smaller screens */}
+                        12 شهر
+                        </Typography>
+                        <hr style={{ borderColor: 'rgba(242, 186, 52, 1)' }} />
+                        <Typography 
+                            variant="h5" 
+                            color='rgba(247, 213, 74, 1)'
+                            sx={{ lineHeight: { xs: 2, md: 4 }, fontWeight: "bold" }}    
+                        >
+                            كل المميزات
+                            <br/>
+
+                        </Typography>        
+                        <Typography 
+                                variant="h5" 
+                                color='rgba(247, 213, 74, 1)'
+                                sx={{ lineHeight: { xs: 1, md: 2 }, fontWeight: "bold" }}    
+                                >
+                            تذكرة 
+                            <span style={{ color: 'red', marginRight: '2%'}}>مجانا </span>
+                            لـ
+                            <br/>
+                            للبرنامج الصيفي        
+                        </Typography>
+
+                        <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', mt: 2, }}>
+                            <Typography 
+                                variant="h3" 
+                                sx={{ 
+                                    color: 'white', 
+                                    fontWeight: 'bold', 
+                                    fontSize: { xs: '24', md: '30' },
+                                    mr: 1,
+                                }}
+                            >
+                                69.990
+                            </Typography>
+                            <Typography 
+                                variant="h3" 
+                                sx={{ 
+                                    color: 'white', 
+                                    textDecoration: 'line-through',
+                                    textDecorationColor: "red",
+                                    fontSize: { xs: '24', md: '30' },
+                                }}
+                            >
+                                125
+                            </Typography>
+                        </Box>
+                    </CardContent>
+
+                    {/* Centered Button */}
+                    <CardActions style={{ justifyContent: 'center' }}>
+                        <Button 
+                            style={{
+                                position: 'absolute',
+                                bottom: '-20px', 
+                                left: '50%', 
+                                transform: 'translateX(-50%)',
+                            }}
+                        >
+                            <img src={orangeButton} alt="Orange Button" />
+                        </Button>
+                    </CardActions>
+                </Card>
+            </Box> 
+        )
+    };
     
     return(
         <Box
@@ -58,7 +516,7 @@ const SectionFour = () => {
                 عضوية واحدة</Grid2>
                 <Grid2 item>
                     <Switch
-                    checked={checked} e
+                    checked={checked} 
                     onChange={handleChange} 
                     value="checked" 
                     />
@@ -71,153 +529,18 @@ const SectionFour = () => {
                     >٣ أعضاء</Grid2>
             </Grid2>
             </Box> 
-            <Box
-                sx={{
-                display: 'flex',
-                flexDirection: { xs: 'column', md: 'row' },
-                alignItems: 'center',
-                justifyContent: 'center',
-                flexWrap: 'wrap', // Ensure cards wrap on smaller screens
-            }}>
-                {/* Card 1 */}
-                <Card 
-                    sx={{ 
-                        my: 2, 
-                        mx: 2,
-                        background: 'linear-gradient(0deg, #45C2D1 -0.02%, #0E6E79 95.94%)',
-                        borderRadius: 10,
-                        height: { xs: 400, md: 500 }, 
-                        width: { xs: 300, md: 350 }, 
-                        position: 'relative',
-                        overflow: 'visible',
-                    }}>
-                    <CardContent>
-                        <Typography variant="h4" color='white' component="div"> {/* Adjust variant for smaller screens */}
-                            شهر ١
-                        </Typography>
-                        <hr style={{ borderColor: 'rgba(242, 186, 52, 1)' }} />
-                        <Typography 
-                            variant="subtitle1"
-                            color='rgba(247, 213, 74, 1)'
-                            sx={{ lineHeight: { xs: 2, md: 4 }, fontWeight: "bold" }}    
-                        >
-                            1 Month Subscription
-                            <br/>
-                            3 Users Account
-                            <br/>
-                            Parents Control
-                            <br/>
-                            Daily Analytics
-                        </Typography>
-                    </CardContent>
-
-                    {/* Centered Button */}
-                    <CardActions style={{ justifyContent: 'center' }}>
-                        <Button 
-                            style={{
-                                position: 'absolute',
-                                bottom: '-20px', 
-                                left: '50%', 
-                                transform: 'translateX(-50%)',
-                            }}
-                        >
-                            <img src={orangeButton} alt="Orange Button" />
-                        </Button>
-                    </CardActions>
-                </Card>
-                {/* Card 2 */}
-                <Card 
-                    sx={{ 
-                        my: 2, 
-                        mx: 2,
-                        background: 'linear-gradient(180deg, #FFB760 0%, #D84C16 100%)',
-                        borderRadius: 10,
-                        height: { xs: 400, md: 500 }, 
-                        width: { xs: 300, md: 350 }, 
-                        position: 'relative',
-                        overflow: 'visible',
-                    }}>
-                    <CardContent>
-                        <Typography variant="h4" color='white' component="div"> {/* Adjust variant for smaller screens */}
-                        ٣ أشهر
-                        </Typography>
-                        <hr style={{ borderColor: 'rgba(242, 186, 52, 1)' }} />
-                        <Typography 
-                            variant="subtitle1" 
-                            color="white"
-                            sx={{ lineHeight: { xs: 2, md: 4 }, fontWeight: "bold"  }}    
-                        >
-                            3 Months subscription
-                            <br/>
-                            3 Users Account
-                            <br/>
-                            Parents Control
-                            <br/>
-                            Daily Analytics
-                        </Typography>
-                    </CardContent>
-
-                    {/* Centered Button */}
-                    <CardActions style={{ justifyContent: 'center' }}>
-                        <Button 
-                            style={{
-                                position: 'absolute',
-                                bottom: '-20px', 
-                                left: '50%', 
-                                transform: 'translateX(-50%)',
-                            }}
-                        >
-                            <img src={orangeButton} alt="Orange Button" />
-                        </Button>
-                    </CardActions>
-                </Card>
-                {/* Card 3*/}
-                <Card 
-                    sx={{ 
-                        my: 2, 
-                        mx: 2,
-                        background: 'linear-gradient(0deg, #45C2D1 -0.02%, #0E6E79 95.94%)',
-                        borderRadius: 10,
-                        height: { xs: 400, md: 500 },
-                        width: { xs: 300, md: 350 }, 
-                        position: 'relative',
-                        overflow: 'visible',
-                    }}>
-                    <CardContent>
-                        <Typography variant="h4" color='white' component="div"> {/* Adjust variant for smaller screens */}
-                        ٦ أشهر
-                        </Typography>
-                        <hr style={{ borderColor: 'rgba(242, 186, 52, 1)' }} />
-                        <Typography 
-                            variant="subtitle1" 
-                            color='rgba(247, 213, 74, 1)'
-                            sx={{ lineHeight: { xs: 2, md: 4 }, fontWeight: "bold" }}    
-                        >
-                            6 Months subscription
-                            <br/>
-                            3 Users Account
-                            <br/>
-                            Parents Control
-                            <br/>
-                            Daily Analytics
-                        </Typography>
-                    </CardContent>
-
-                    {/* Centered Button */}
-                    <CardActions style={{ justifyContent: 'center' }}>
-                        <Button 
-                            style={{
-                                position: 'absolute',
-                                bottom: '-20px', 
-                                left: '50%', 
-                                transform: 'translateX(-50%)',
-                            }}
-                        >
-                            <img src={orangeButton} alt="Orange Button" />
-                        </Button>
-                    </CardActions>
-                </Card>
-            </Box>                           
+            {checked ?
+            <div>
+                {threeMembership()}
+            </div>
+            :
+            <div>
+                 {singleMembership()}
+            </div>
+           
+            }
+            
+                                   
         </Box>
     )
 } 

@@ -27,23 +27,23 @@ const SectionFive = () => {
                 </Typography>
                 <Box sx={{ display: 'flex', paddingBottom: 5, alignItems: 'center' }}>
                     <Box sx={{ height: '50px', width: '4px', backgroundColor: 'white', marginRight: 2 }} />
-                    <Box>
-                        <Typography variant="h6" sx={{ color: '#39b5e0' }}>For More Info Call</Typography>
+                    <Box sx={{textAlign: 'left'}}>
+                        <Typography variant="h6" sx={{ color: '#39b5e0' }}>للاستفسارات</Typography>
                         <Typography variant="subtitle1" sx={{ color: 'white' }}>+1234567890</Typography>
                     </Box>
                 </Box>
                 <Box sx={{ display: 'flex', paddingBottom: 5, alignItems: 'center' }}>
                     <Box sx={{ height: '50px', width: '4px', backgroundColor: 'white', marginRight: 2 }} />
-                    <Box>
-                        <Typography variant="h6" sx={{ color: '#39b5e0' }}>Email Address</Typography>
+                    <Box sx={{textAlign: 'left'}}>
+                        <Typography variant="h6" sx={{ color: '#39b5e0' }}>البريد الالكتروني</Typography>
                         <Typography variant="subtitle1" sx={{ color: 'white' }}>resha@gmail.com</Typography>
                     </Box>
                 </Box>
                 <Box sx={{ display: 'flex', paddingBottom: 5, alignItems: 'center' }}>
                     <Box sx={{ height: '50px', width: '4px', backgroundColor: 'white', marginRight: 2 }} />
-                    <Box>
-                        <Typography variant="h6" sx={{ color: '#39b5e0' }}>Website</Typography>
-                        <Typography variant="subtitle1" sx={{ color: 'white' }}>resha.com</Typography>
+                    <Box sx={{textAlign: 'left'}}>
+                        <Typography variant="h6" sx={{ color: '#39b5e0' }}>الانستقرام</Typography>
+                        <Typography variant="subtitle1" sx={{ color: 'white' }}>@ReeshaApp</Typography>
                     </Box>
                 </Box>
             </Box>
