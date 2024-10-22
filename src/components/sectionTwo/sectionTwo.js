@@ -3,7 +3,7 @@ import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Divider from '@mui/material/Divider';
-// import './sectionTwo.css'
+import './sectionTwo.css'
 import '../../css/parentClass.css'
 import english from "../../images/english.png"
 import math from "../../images/math.png"
@@ -11,36 +11,31 @@ import geo from "../../images/geo.png"
 import islamic from "../../images/islamic.png"
 import science from "../../images/science.png"
 import arabic from "../../images/arabic.png"
-import rectangle from "../../images/rectangle.png"
+// import headerBackground from "../../images/rectangleSubjects.png"
 
 const SectionTwo = () => {
 
     return(
-        <Box>
+        <Box class="bottom-margin-of-body">
             <Box class="header">
-                <Divider 
-                    sx={{
-                    borderColor: 'rgba(255, 171, 36, 1)',
-                    borderWidth: '1px',
-                    width: '100%',
-                    marginBottom: 2,
-                    opacity: 0.9,
-                    }} 
-                />
-                <Typography
-                    variant="h2"
-                    sx={{
-                        background: 'linear-gradient(90deg, #ff5e3a, #ff9900)',
-                        WebkitBackgroundClip: 'text',
-                        WebkitTextFillColor: 'transparent',
-                        fontWeight: 400,
-                        textShadow: '2px 2px 5px rgba(0, 0, 0, 0.5)',
-                        textAlign: 'center',
-                        paddingBottom: 5
-                    }}
-                    gutterBottom>
-                    الدروس
-                </Typography>
+                <Divider class="divider"/>
+                <Box class='background-wrapper'>
+                    <Typography
+                        variant="h2"
+                        sx={{
+                            background: 'linear-gradient(90deg, #ff5e3a, #ff9900)',
+                            WebkitBackgroundClip: 'text',
+                            WebkitTextFillColor: 'transparent',
+                            fontWeight: 400,
+                            textShadow: '2px 2px 5px rgba(0, 0, 0, 0.5)',
+                            textAlign: 'center',
+                            // paddingBottom: 5
+                        }}
+                        gutterBottom>
+                        الدروس
+                    </Typography>
+                </Box>
+
             </Box>
             <Box
                 sx={{
@@ -50,6 +45,7 @@ const SectionTwo = () => {
                     justifyContent: 'center',
                     columnGap: 10,
                     flexWrap: 'wrap',
+                    paddingTop: 5
                 }}>
                 <Button
                     size='small'

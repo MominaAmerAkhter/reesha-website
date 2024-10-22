@@ -9,32 +9,24 @@ import '../../css/parentClass.css'
 const SectionThree = () => {
 
     return(
-        <Box>
+        <Box class="bottom-margin-of-body">
             <Box class="header">
-                <Divider 
-                    sx={{
-                    borderColor: 'rgba(255, 171, 36, 1)',
-                    borderWidth: '1px',
-                    width: '100%',
-                    marginBottom: 2,
-                    opacity: 0.9,
-                    }} 
-                />
-                <Typography
-                    variant="h2"
-                    sx={{
-                        background: 'linear-gradient(90deg, #ff5e3a, #ff9900)',
-                        WebkitBackgroundClip: 'text',
-                        WebkitTextFillColor: 'transparent',
-                        fontWeight: 400,
-                        textShadow: '2px 2px 5px rgba(0, 0, 0, 0.5)',
-                        textAlign: 'center',
-                        paddingBottom: 5,
-                        // fontSize: { xs: '1.5rem', sm: '2rem', md: '2.5rem', lg: '3rem' }, 
-                    }}
-                    gutterBottom>
-                    تابع مسار التعليم
-                </Typography>
+                <Divider class="divider"/>
+                <Box class='background-wrapper'>
+                    <Typography
+                        variant="h2"
+                        sx={{
+                            background: 'linear-gradient(90deg, #ff5e3a, #ff9900)',
+                            WebkitBackgroundClip: 'text',
+                            WebkitTextFillColor: 'transparent',
+                            fontWeight: 400,
+                            textShadow: '2px 2px 5px rgba(0, 0, 0, 0.5)',
+                            textAlign: 'center',
+                        }}
+                        gutterBottom>
+                        تابع مسار التعليم
+                    </Typography>
+                </Box>
             </Box>
             <Box
                 sx={{
@@ -42,6 +34,7 @@ const SectionThree = () => {
                     flexDirection: { xs: 'column', sm: 'row' }, // Stack vertically on small screens
                     alignItems: 'center',
                     justifyContent: 'center',
+                    marginTop: 5
                 }}>
                 <img 
                     sizes='small' 

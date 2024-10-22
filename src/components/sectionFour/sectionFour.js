@@ -493,33 +493,26 @@ const SectionFour = () => {
 
 
     return(
-        <Box sx={{paddingBottom: '20%'}}>
+        <Box class="bottom-margin-of-section-four">
+            <Box class="header">
+                <Divider class="divider"/>
+                <Box class='background-wrapper'>
+                    <Typography 
+                        variant="h2" 
+                        sx={{
+                            background: 'linear-gradient(90deg, #ff5e3a, #ff9900)', 
+                            WebkitBackgroundClip: 'text', 
+                            WebkitTextFillColor: 'transparent',
+                            fontFamily: 'Aladin',
+                            fontWeight: 400,
+                            textShadow: '2px 2px 5px rgba(0, 0, 0, 0.5)', 
+                            textAlign: 'center',
+                        }}
+                        gutterBottom>
+                    الاشتراكات   
+                    </Typography>
+                </Box>
 
-            <Box class='header'>
-                <Divider 
-                    sx={{
-                    borderColor: 'rgba(255, 171, 36, 1)',
-                    borderWidth: '1px',
-                    width: '100%',
-                    marginBottom: 2,
-                    opacity: 0.9,
-                    }} 
-                />
-                <Typography 
-                    variant="h2" 
-                    sx={{
-                        background: 'linear-gradient(90deg, #ff5e3a, #ff9900)', 
-                        WebkitBackgroundClip: 'text', 
-                        WebkitTextFillColor: 'transparent',
-                        fontFamily: 'Aladin',
-                        fontWeight: 400,
-                        textShadow: '2px 2px 5px rgba(0, 0, 0, 0.5)', 
-                        textAlign: 'center',
-                        paddingBottom: 5
-                    }}
-                    gutterBottom>
-                الاشتراكات   
-                </Typography>
             </Box>
             <Box
                 sx={{
@@ -527,6 +520,7 @@ const SectionFour = () => {
                     flexDirection: 'row',
                     alignItems: 'center',
                     justifyContent: 'center',
+                    marginTop: 5
                 }}
             >
             {/* switch   */}
