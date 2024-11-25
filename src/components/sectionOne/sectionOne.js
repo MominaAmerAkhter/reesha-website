@@ -15,7 +15,7 @@ import { Button } from '@mui/material';
 
 function HeroModel(props) {
   // Load the GLTF model
-  const gltf = useGLTF("/models/Reesha 01.glb");
+  const gltf = useGLTF("/models/Reesha Entry Play All.glb");
   const { animations } = gltf; // Extract animations
   const { actions, names } = useAnimations(animations, gltf.scene); // Load animations
 
@@ -28,7 +28,7 @@ function HeroModel(props) {
 
   return (
     <Bounds fit clip observe margin={1}> {/* Automatically scales to fit */}
-      <primitive object={gltf.scene} position={[0, 0, 0]} />
+      <primitive object={gltf.scene} scale={[1.5,1.5,1.5]} position={[0, 0, 0]} />
     </Bounds>
   );
 
@@ -114,7 +114,7 @@ const SectionOne = () => {
                                 <directionalLight position={[0, 5, 5]} intensity={1} />
                                 {/* <axesHelper args={[5]} /> */}
                                 <HeroModel />
-                                <OrbitControls enableRotate={true} />
+                                <OrbitControls enableZoom={false} enableRotate={true} />
                             </Suspense>
                             <Stats />
                     </Canvas>
@@ -148,7 +148,7 @@ const SectionOne = () => {
                                 <directionalLight position={[0, 5, 5]} intensity={1} />
                                 {/* <axesHelper args={[5]} /> */}
                                 <HeroModel />
-                                <OrbitControls enableRotate={true} />
+                                <OrbitControls enableZoom={false} enableRotate={true} />
                             </Suspense>
                             <Stats />
                     </Canvas>
