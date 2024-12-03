@@ -29,13 +29,13 @@ function HeroModel({ loopState, setAnimationDuration  }) {
     }, [loopState, entryActions, entryNames, exitActions, exitNames]);
   
     return (
-      <Bounds fit clip observe margin={1}>
+    //   <Bounds fit clip observe margin={1}>
         <primitive
           object={loopState === 'entry' ? entryGltf.scene : exitGltf.scene}
-          scale={[1.5, 1.5, 1.5]}
+          scale={[25, 25, 25]}
           position={[0, 0, 0]}
         />
-      </Bounds>
+    //   </Bounds>
     );
 }  
 
@@ -123,18 +123,6 @@ const SectionOne = () => {
                             zIndex: 1
                         }}
                     />
-                    {/* <img
-                        // className='hero-img'
-                        src={hero}
-                        alt="Avatar"
-                        style={{
-                            position: 'absolute',
-                            top: '0%',
-                            left: "50%",
-                            zIndex: 2,
-                            maxWidth: '50%'
-                        }}
-                    /> */}
                     <Canvas 
                         style={{
                             position: 'absolute',
@@ -150,7 +138,6 @@ const SectionOne = () => {
                                 <HeroModel loopState={loopState}  setAnimationDuration={setAnimationDuration}/>
                                 <OrbitControls enableZoom={false} enableRotate={true} />
                             </Suspense>
-                            <Stats />
                     </Canvas>
 
                 </Box>
@@ -164,14 +151,6 @@ const SectionOne = () => {
                                 maxWidth: '80%'
                             }}
                         />
-                    {/* <img
-                        // className='hero-img'
-                        src={hero}
-                        alt="Avatar"
-                        style={{
-                            maxWidth: '50%'
-                        }}
-                    /> */}
                     <Canvas 
                         style={{
                             maxWidth: '50%'
@@ -180,11 +159,9 @@ const SectionOne = () => {
                             <Suspense fallback={null}>
                                 <ambientLight intensity={0.5} />
                                 <directionalLight position={[0, 5, 5]} intensity={1} />
-                                {/* <axesHelper args={[5]} /> */}
                                 <HeroModel loopState={loopState}  />
                                 <OrbitControls enableZoom={false} enableRotate={true} />
                             </Suspense>
-                            <Stats />
                     </Canvas>
                 </Box>
 
