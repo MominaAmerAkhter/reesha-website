@@ -45,20 +45,20 @@ body{
    
 }
 
-/* .redirect-login{
-    display: flex;
-    flex-direction: 'row';
-    gap: 50% !important;
-} */
+
 
 .redirect-login-question{
     color: white;
+    /* max-width: fit-content; */
 }
 
 .login-button{
     background: white !important;
     border-radius: 10px;
-    color: black !important;
     padding: 2%;
-    /* margin-right: 60%; */
+}
+
+.link-decor{
+    text-decoration: none;
+    color: black
 }

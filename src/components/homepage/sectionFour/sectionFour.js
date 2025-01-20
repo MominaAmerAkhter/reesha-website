@@ -1,3 +1,4 @@
+import { Outlet, Link } from "react-router-dom";
 import * as React from 'react';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
@@ -98,7 +99,9 @@ const SectionFour = () => {
                                 transform: 'translateX(-50%)',
                             }}
                         >
+                            <Link class='link-decor' to="/login">
                             <img src={orangeButton} alt="Orange Button" />
+                            </Link>
                         </Button>
                     </CardActions>
                 </Card>
@@ -166,7 +169,9 @@ const SectionFour = () => {
                                 transform: 'translateX(-50%)',
                             }}
                         >
+                            <Link class='link-decor' to="/login">
                             <img src={orangeButton} alt="Orange Button" />
+                            </Link>
                         </Button>
                     </CardActions>
                 </Card>
@@ -249,7 +254,9 @@ const SectionFour = () => {
                                 transform: 'translateX(-50%)',
                             }}
                         >
+                            <Link class='link-decor' to="/login">
                             <img src={orangeButton} alt="Orange Button" />
+                            </Link>
                         </Button>
                     </CardActions>
                 </Card>
@@ -331,7 +338,9 @@ const SectionFour = () => {
                                 transform: 'translateX(-50%)',
                             }}
                         >
+                            <Link class='link-decor' to="/login">
                             <img src={orangeButton} alt="Orange Button" />
+                            </Link>
                         </Button>
                     </CardActions>
                 </Card>
@@ -399,7 +408,9 @@ const SectionFour = () => {
                                 transform: 'translateX(-50%)',
                             }}
                         >
+                           <Link class='link-decor' to="/login">
                             <img src={orangeButton} alt="Orange Button" />
+                            </Link>
                         </Button>
                     </CardActions>
                 </Card>
@@ -482,7 +493,9 @@ const SectionFour = () => {
                                 transform: 'translateX(-50%)',
                             }}
                         >
+                           <Link class='link-decor' to="/login">
                             <img src={orangeButton} alt="Orange Button" />
+                            </Link>
                         </Button>
                     </CardActions>
                 </Card>

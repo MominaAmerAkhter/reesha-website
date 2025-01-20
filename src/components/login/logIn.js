@@ -1,3 +1,4 @@
+import { Outlet, Link } from "react-router-dom";
 import * as React from 'react';
 import { useState } from 'react';
 import "@fontsource/aladin"; 
@@ -89,20 +90,18 @@ const Login = () => {
                             sx={{
                                 display: 'flex',
                                 flexDirection: { xs: 'column', md: 'row-reverse' },
-                                justifyContent: {xs: 'center'},
-                                alignItems: {xs: 'center'},
+                                justifyContent: {xs: 'center', md:'right'},
+                                alignItems: {xs: 'center', md:'right'},
                                 flexWrap: 'wrap', // Ensure cards wrap on smaller screens
-                                gap: '59%'
-                            }}
-                            class='redirect-login'>
+                                gap: '65%'
+                            }}>
 
                             <Typography class='redirect-login-question' variant="subtitle1" color='white' component="div">
                             ليس لديك حساب؟
                             </Typography>
 
-                            <Button class='login-button'
-                            >
-                            !سجل الآن  
+                            <Button class='login-button'>
+                                <Link class='link-decor' to="/signup">  !سجل الآن </Link>     
                             </Button>
                             
                         </Box>
