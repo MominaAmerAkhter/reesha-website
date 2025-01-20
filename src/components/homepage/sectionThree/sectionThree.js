@@ -2,8 +2,8 @@ import * as React from 'react';
 import Typography from '@mui/material/Typography';
 import {Box, Divider} from '@mui/material';
 import './sectionThree.css'
-import progress from "../../images/progress.png"
-import '../../css/parentClass.css'
+import progress from "../../../images/progress.png"
+import '../../../css/parentClass.css'
 
 
 const SectionThree = () => {

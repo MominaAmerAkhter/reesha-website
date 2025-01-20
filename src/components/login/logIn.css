@@ -1,0 +1,64 @@
+
+body{
+    background-color: rgba(0, 43, 52, 1);
+    /* height: 100%; */
+    font-family: "Andada Pro";
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0px;
+    padding: 0px;
+}
+
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+    padding-top: 2%;
+}
+
+.login-box{
+    margin: auto !important;
+    padding-right: 1%;
+    padding-left: 1%;
+    width: fit-content;
+    background-color: #121F22;  
+    text-align: right;
+    border-radius: 3%;
+
+}
+
+.textfield{
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 5% !important;
+}
+
+.signup-button{
+
+    background: linear-gradient(90deg, #FFBA24 0%, #FF531D 100%);
+    border-radius: 10px;
+    color: rgba(10, 68, 56, 1) !important;
+    width: 100%;
+    padding: 2%;
+    font-size: larger;
+   
+}
+
+/* .redirect-login{
+    display: flex;
+    flex-direction: 'row';
+    gap: 50% !important;
+} */
+
+.redirect-login-question{
+    color: white;
+}
+
+.login-button{
+    background: white !important;
+    border-radius: 10px;
+    color: black !important;
+    padding: 2%;
+    /* margin-right: 60%; */
+}

@@ -4,14 +4,14 @@ import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Divider from '@mui/material/Divider';
 import './sectionFour.css'
-import '../../css/parentClass.css'
+import '../../../css/parentClass.css'
 import Switch from '@mui/material/Switch'
 import Grid2 from '@mui/material/Grid2'
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardActions from '@mui/material/CardActions';
-import orangeButton from "../../images/orangeButton.png"
-import bookmark from "../../images/bookmark.png"
+import orangeButton from "../../../images/orangeButton.png"
+import bookmark from "../../../images/bookmark.png"
 import "@fontsource/aladin/400.css"; // Specify weight
 
 const SectionFour = () => {

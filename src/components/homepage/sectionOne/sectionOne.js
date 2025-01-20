@@ -3,8 +3,8 @@ import { Canvas } from "@react-three/fiber";
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import './sectionOne.css'
-import ipad from '../../images/ipad.png'
-import hero from "../../images/hero1.png"
+import ipad from '../../../images/ipad.png'
+import hero from "../../../images/hero1.png"
 import { useGLTF,OrbitControls, Stats, useAnimations} from "@react-three/drei";
 import { Html,Bounds  } from "@react-three/drei"
 import { Suspense } from 'react'

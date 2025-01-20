@@ -4,13 +4,13 @@ import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Divider from '@mui/material/Divider';
 import './sectionTwo.css'
-import '../../css/parentClass.css'
-import english from "../../images/english.png"
-import math from "../../images/math.png"
-import geo from "../../images/geo.png"
-import islamic from "../../images/islamic.png"
-import science from "../../images/science.png"
-import arabic from "../../images/arabic.png"
+import '../../../css/parentClass.css'
+import english from "../../../images/english.png"
+import math from "../../../images/math.png"
+import geo from "../../../images/geo.png"
+import islamic from "../../../images/islamic.png"
+import science from "../../../images/science.png"
+import arabic from "../../../images/arabic.png"
 // import headerBackground from "../../images/rectangleSubjects.png"
 
 const SectionTwo = () => {

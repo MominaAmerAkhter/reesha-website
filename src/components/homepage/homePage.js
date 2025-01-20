@@ -3,11 +3,11 @@ import { useRef } from 'react';
 import NavBar from '../navbar/navBar'
 import Footer from '../footer/footer'
 import './homePage.css'
-import SectionOne from '../sectionOne/sectionOne';
-import SectionTwo from '../sectionTwo/sectionTwo';
-import SectionThree from '../sectionThree/sectionThree';
-import SectionFour from '../sectionFour/sectionFour';
-import SectionFive from '../sectionFive/sectionFive';
+import SectionOne from './sectionOne/sectionOne';
+import SectionTwo from './sectionTwo/sectionTwo';
+import SectionThree from './sectionThree/sectionThree';
+import SectionFour from './sectionFour/sectionFour';
+import SectionFive from './sectionFive/sectionFive';
 import "@fontsource/aladin"; 
 
 const HomePage = () => {
